@@ -96,6 +96,7 @@ func main() {
 	blockchain := CreateBlockchain(2)
 	blockchain.addBlock("MR.ROBOT", "Soham", 10)
 	blockchain.addBlock("NF", "Soham", 100)
+	fmt.Println(blockchain.isValid())
 	blockchain.printBlockHashes()
 	blockchain.printBlockchainHash()
 }
